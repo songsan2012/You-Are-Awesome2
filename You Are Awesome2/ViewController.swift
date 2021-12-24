@@ -12,35 +12,39 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var messageButtonPressed: UIButton!
-      
+    
     @IBOutlet weak var messageImage: UIImageView!
     
+    var imageCounter = 0
+    let maxImageCount = 9
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        print("😎 The program just loaded now.")
-        
-//        messageLabel.text = "Fabulous?, that's you"
         messageLabel.text = ""
     }
     
     @IBAction func ShowMessage(_ sender: Any) {
-//        print("🤣 The messsage button was pressed")
-    
-        messageLabel.text = "You Are Awesome!!!"
-        messageLabel.textColor = .red
-        messageImage.image = UIImage(named: "image0")
-    
-    }
 
-    @IBAction func ShowAnotherMessage(_ sender: Any) {
+        // -- Make a loop to increment for the image
+        print(imageCounter)
         
+        imageCounter = imageCounter + 1
+        
+        if (imageCounter > maxImageCount) {
+            imageCounter = 0
+            
+            messageLabel.text = "Round complete. You Are Awesome!!!"
+        }
+        
+        messageImage.image = UIImage(named: "image\(imageCounter)")
+    }
+    
+    @IBAction func ShowAnotherMessage(_ sender: Any) {
         messageLabel.text = "You Are Great!!!!"
         messageLabel.textColor = .blue
         
         messageImage.image = UIImage(named: "image1")
-        
         
     }
     
