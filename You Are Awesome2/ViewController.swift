@@ -31,6 +31,11 @@ class ViewController: UIViewController {
     
     }
 
-
+    @IBAction func ShowAnotherMessage(_ sender: Any) {
+        
+        messageLabel.text = "You Are Great!!!!"
+        
+    }
+    
 }
 
