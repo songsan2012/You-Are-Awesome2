@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 //        print("🤣 The messsage button was pressed")
     
         messageLabel.text = "You Are Awesome!!!"
-
+        messageLabel.textColor = .red
         messageImage.image = UIImage(named: "image0")
     
     }
