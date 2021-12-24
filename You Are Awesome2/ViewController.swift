@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 //        print("😎 The program just loaded now.")
         
 //        messageLabel.text = "Fabulous?, that's you"
-        
+        messageLabel.text = ""
     }
     
     @IBAction func ShowMessage(_ sender: Any) {
