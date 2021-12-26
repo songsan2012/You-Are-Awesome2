@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,9 @@ class ViewController: UIViewController {
     
     var imageCounter = 0
     let maxImageCount = 9
+    
+    var audioPlayer: AVAudioPlayer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +57,25 @@ class ViewController: UIViewController {
         }
         
          imageCounter = imageCounter + 1
+        
+        var soundName = "sound0"
+        
+        // -- Play a Sound
+//        if let sound = NSDataAsset(name: soundName) {
+//            do {
+//                try audioPlayer = AVAudioPlayer(data: sound.data)
+//                audioPlayer.play()
+//                
+//            } catch {
+//                print("😡 Error. Could not initiate player.")
+//            }
+//            
+//        }
+//        else {
+//            // -- Print an error
+//            print("😡 Error. Could not play sound0.")
+//        }
+        
         
     }
     

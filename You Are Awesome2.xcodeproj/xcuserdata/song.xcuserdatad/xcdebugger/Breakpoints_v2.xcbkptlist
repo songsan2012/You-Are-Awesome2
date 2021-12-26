@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "94A8752A-271E-4E5E-B93D-1F0B64049656"
+            uuid = "32092D7A-30D9-43A2-B3C1-931592A2398C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "You Are Awesome2/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "ShowMessage(_:)"
             landmarkType = "7">
          </BreakpointContent>
